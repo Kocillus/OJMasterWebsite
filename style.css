@@ -6,6 +6,8 @@ body {
     font-family: 'Roboto';
 }
 
+/* Menu */
+
 header {
     width: 100vw;
     background-color: rgb(25, 25, 25);
@@ -54,17 +56,21 @@ h1 {
     margin: 0;
 }
 
+/* Homepage */
+
 .heroIMG {
-    background-image: url(img/heroIMG.jpg);
     width: 100vw;
-    height: 20vw;
+    height: 15vw;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
     border-bottom: solid 2px #ffff00;
+}
 
+.heroIMG-homepage {
+    background-image: url(img/heroIMG.jpg);
 }
 
 section {
@@ -72,11 +78,11 @@ section {
     background-color: rgba(30, 30, 30, 1);
 }
 
-.sectionTitle {
+.section-title {
     text-align: center;
     color: antiquewhite;
     margin: 0;
-    padding: 2vw 0 0 0;
+    padding: 1vw 0 1vw 0;
 }
 
 
@@ -152,10 +158,182 @@ section {
     padding-right: 2vw;
 }
 
+/* Prices */
+
+.heroIMG-price {
+    background-image: url(img/heroIMG-price.jpg);
+}
+
+.section-prices {
+    width: 76vw;
+    margin: 0 12vw 0 12vw;
+}
+
+.section-prices ul {
+    width: 20%;
+    padding-left: 40%;
+    padding-right: 40%;
+    padding-bottom: 2vw;
+    margin: 0;
+}
+
+.section-prices li {
+    padding-top: 15px;
+    list-style: none;
+}
+
+.prices {
+    color: #ffff00;
+}
+
+/* Camps */
+
+.heroIMG-camps {
+    background-image: url(img/heroIMG-camps.jpg);
+}
+
+.camps-description{
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin: 0;
+    text-align: center;
+}
+
+.camps-container { 
+    padding-top: 3vw; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "camps-description1 camps-description1 camps-description1"
+      "camps-description2 camps-description3 camps-description4"
+      "camps-description5 camps-description6 camps-description7"
+      "camps-description8 camps-description8 camps-description8"
+      "camps-description9 camps-description9 camps-description9";
+  }
+  
+.camps-description1 { 
+    grid-area: camps-description1;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+.camps-description2 { grid-area: camps-description2; 
+        background-color: rgba(35, 35, 35, 1);    
+}
+  
+.camps-description3 { grid-area: camps-description3; 
+    background-color: rgba(35, 35, 35, 1);    
+}
+  
+.camps-description4 { grid-area: camps-description4; 
+        background-color: rgba(35, 35, 35, 1);    
+}
+  
+.camps-description5 { grid-area: camps-description5; 
+    background-color: rgba(35, 35, 35, 1);    
+}
+  
+.camps-description6 { grid-area: camps-description6; 
+    background-color: rgba(35, 35, 35, 1);    
+}
+  
+.camps-description7 { grid-area: camps-description7; 
+    background-color: rgba(35, 35, 35, 1);    
+}
+  
+.camps-description8 { 
+    grid-area: camps-description8; 
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+  
+.camps-description9 { 
+    padding-left: 4vw;
+    padding-right: 4vw;
+    grid-area: camps-description9; 
+}
+  
+
+h3 {
+    color: #ffff00;
+    text-align: center;
+}
+
+.camps-container p {
+    text-align: center;
+}
+
+.important {
+    color: #ffff00;
+}
+
+/* Contact */
+
+.heroIMG-contact {
+    background-image: url(img/heroIMG-contact.jpg);
+}
+
+.material-symbols-outlined {
+    color: #ffff00;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+}
+
+.section-contact {
+    padding-bottom: 2vw;
+}
+
+.container-contact {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 5px 38% 5px 38%; 
+    width: 24%;
+}
+
+.container-contact span {
+    align-items: center;
+}
+
+.container-contact a, a:hover, a:active, a:visited{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.container-contact p {
+    padding-left: 10px;
+}
+
+.map {
+    width: 100%;
+    padding: 1vw 0 1vw 0;
+    margin: 0;
+
+}
+
+/* Footer */
+
 footer {
     border-top: solid 2px #ffff00;
+    font-size: 12px;
     width: 100vw;
     color: antiquewhite;
     background-color: rgba(25, 25, 25, 1);
     text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.files {
+    padding-top: 1vw;
 }
