@@ -170,7 +170,7 @@ section {
 }
 
 .section-prices ul {
-    width: 20%;
+    width: 30%;
     padding-left: 40%;
     padding-right: 40%;
     padding-bottom: 2vw;
@@ -178,11 +178,13 @@ section {
 }
 
 .section-prices li {
+    font-size: 25px;
     padding-top: 15px;
     list-style: none;
 }
 
 .prices {
+    font-size: 20px;
     color: #ffff00;
 }
 
@@ -198,6 +200,53 @@ section {
     padding-right: 25%;
     margin: 0;
     text-align: center;
+}
+
+.container-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: auto;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 1vw;
+    margin: 0;
+}
+
+.camps-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.03);
+    transition: 0.3s;
+    margin: 2vw;
+    padding-top: 2vw;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid #ffff00;
+    height: auto;
+    width: auto;
+  }
+  
+.camps-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.1);
+  }
+  
+.camps-card-container {
+    padding: 2px 16px;
+    color: #ffff;
+  }
+
+.camps-card h3 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    background-color: #ffff00;
+    width: 100%;
+}
+
+.camps-card-container li, ul {
+    font-size: 30px;
+    list-style: none;
+    padding: 0;
 }
 
 .camps-container { 
@@ -221,42 +270,49 @@ section {
     padding-right: 4vw;
 }
 
-.camps-description2 { grid-area: camps-description2; 
-        background-color: rgba(35, 35, 35, 1);    
-}
-  
-.camps-description3 { grid-area: camps-description3; 
+.camps-description2 { 
+    grid-area: camps-description2; 
     background-color: rgba(35, 35, 35, 1);    
 }
   
-.camps-description4 { grid-area: camps-description4; 
-        background-color: rgba(35, 35, 35, 1);    
-}
-  
-.camps-description5 { grid-area: camps-description5; 
+.camps-description3 { 
+    grid-area: camps-description3; 
     background-color: rgba(35, 35, 35, 1);    
 }
   
-.camps-description6 { grid-area: camps-description6; 
+.camps-description4 { 
+    grid-area: camps-description4; 
     background-color: rgba(35, 35, 35, 1);    
 }
   
-.camps-description7 { grid-area: camps-description7; 
+.camps-description5 { 
+    grid-area: camps-description5; 
+    background-color: rgba(35, 35, 35, 1);    
+}
+  
+.camps-description6 { 
+    grid-area: camps-description6; 
+    background-color: rgba(35, 35, 35, 1);    
+}
+  
+.camps-description7 { 
+    grid-area: camps-description7; 
     background-color: rgba(35, 35, 35, 1);    
 }
   
 .camps-description8 { 
     grid-area: camps-description8; 
-    padding-left: 4vw;
-    padding-right: 4vw;
+    align-self: center;
+    padding: 0 4vw 0 4vw;
 }
-  
+
 .camps-description9 { 
     padding-left: 4vw;
     padding-right: 4vw;
+    margin-bottom:2vw;
+    background-color: rgba(35, 35, 35, 1);
     grid-area: camps-description9; 
 }
-  
 
 h3 {
     color: #ffff00;
@@ -269,6 +325,12 @@ h3 {
 
 .important {
     color: #ffff00;
+}
+
+/* Gallery */
+
+.heroIMG-gallery {
+    background-image: url(img/heroIMG-gallery.jpg);
 }
 
 /* Contact */
@@ -293,7 +355,6 @@ h3 {
 .container-contact {
     display: flex;
     align-content: center;
-    flex-wrap: wrap;
     padding: 5px 38% 5px 38%; 
     width: 24%;
 }
@@ -336,4 +397,113 @@ footer a {
 
 .files {
     padding-top: 1vw;
+}
+
+@media (max-width: 786px) {
+
+    nav {
+        font-size: 13px;
+    }
+
+    section {
+        margin: 0px !important;
+    }
+    
+    .container {
+        width: 100vw;
+        padding: 1vw 0 1vw 0;
+        margin: 0px !important;
+    }
+
+    .container p {
+        font-size: 10px;
+    }
+
+    .container h2 {
+        font-size: 12px;
+    }
+
+    .section-prices {
+        margin: 0 !important;
+        width: 100vw;
+    }
+
+    .section-prices ul {
+        padding-left: 30vw;
+        padding-right: 30vw;
+        width: 40vw;
+    }
+
+    .section-prices li {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container img {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    h2,.container p, nav {
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 8px;
+    }
+
+
+    .section-prices li {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 10px;
+    }
+
+    .section-prices span {
+        font-size: 8px;
+    }
+
+    .section-camps {
+        margin: 0;
+    }
+
+    .camps-description {
+        font-size: 10px;
+        width: 100vw;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 3vw;
+    }
+
+    .camps-card h3 {
+        font-size: 12px;
+    }
+
+    .camps-card li {
+        font-size: 10px;
+    }
+
+    .camps-container {
+        font-size: 10px;
+    }
+
+    .camps-container h3 {
+        font-size: 10px;
+    }
+
+    .section-contact {
+        margin: 0;
+    }
+
+    .container-contact {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .container-contact p {
+        width: 100vw;
+    }
 }
