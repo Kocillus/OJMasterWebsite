@@ -333,6 +333,33 @@ h3 {
     background-image: url(img/heroIMG-gallery.jpg);
 }
 
+video {
+    width: 30vw;
+    height: auto;
+    
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 75vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 35vw;
+    height: auto;
+    border: solid 1px #ffff00;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+    transition: transform .5s ease;
+}
+
 /* Contact */
 
 .heroIMG-contact {
@@ -438,6 +465,17 @@ footer a {
         padding-left: 2vw;
         padding-right: 2vw;
         font-size: 18px;
+    }
+
+    .gallery-container {
+        width: 100vw;
+        margin: 0;
+        padding: 1vw 0 3vw 0;
+    }
+
+    .gallery-item {
+        width: 20vw;
+        height: 15vw;
     }
 }
 
